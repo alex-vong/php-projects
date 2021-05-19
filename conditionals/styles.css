@@ -4,6 +4,18 @@ h1 {
 	font-size: 60px;
 	margin: 20px 0;
 }
+
+h2 {
+	font-size: 30px;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	border-top: 1px solid #333;
+}
+
+p:nth-of-type(last) {
+	font-size: 80px;
+}
+
 .inner-column {
 	width: min(90%, 1000px);
 }
