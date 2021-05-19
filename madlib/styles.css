@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eater&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Butcherman&display=swap');
+
+body {
+	background-color: #7b2cbf;
+}
+
+h1 {
+	font-family: 'Creepster', cursive;
+	/* font-size: clamp(5vw, 10vw, 60px); */
+	font-size: min(12vw, 60px);
+
+	color: limegreen;
+	letter-spacing: 0.2rem;
+}
+
+span {
+	letter-spacing: normal;
+	font-family: serif;
+}
+
+h2.scary,
+h2.student-survey,
+h2.php-facts {
+	font-family: 'Nosifer', cursive;
+	font-size: 45px;
+	color: #8a0303;
+	text-shadow: 4px 4px 0px black;
+	margin-bottom: 20px;
+}
+
+p,
+p span {
+	font-family: aller;
+	font-size: 25px;
+}
+
+span.madlib1 {
+	font-family: 'Nosifer', cursive;
+	color: #85e21f;
+	font-size: 25px;
+}
+span.madlib2 {
+	font-family: 'Eater', cursive;
+	color: #7b2c13;
+	font-size: 25px;
+	letter-spacing: 0.2rem;
+	text-shadow: 3px 3px 0px black;
+}
+span.madlib3 {
+	font-family: 'Creepster', cursive;
+	color: #8a0303;
+	font-size: 30px;
+	letter-spacing: 0.2rem;
+	text-shadow: 2px 2px 0px black;
+}
+
+h2.student-survey {
+	font-family: aller;
+	margin-top: 40px;
+	color: #84d340;
+}
+
+p span {
+	color: #fff;
+	text-transform: 3px 3px solid #080808;
+}
+
+h2.php-facts {
+	font-family: monaco;
+	margin-top: 40px;
+	color: #f96900;
+}
+
+.inner-column {
+	width: min(85%, 1200px);
+	margin: 0 auto;
+}

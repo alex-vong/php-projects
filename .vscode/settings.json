@@ -1,0 +1,6 @@
+{
+  "liveServer.settings.port": 5501,
+  "phpserver.port": 8888,
+  "phpserver.relativePath": "/php-projects/",
+  "phpserver.ip": "localhost/8888"
+}
