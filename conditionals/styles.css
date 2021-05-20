@@ -30,3 +30,17 @@ span.conditional {
 	font-style: italic;
 	color: limegreen;
 }
+
+.lakers {
+	color: purple;
+	text-shadow: 3px 3px 0px gold;
+}
+
+span.starting5 {
+	color: purple;
+}
+
+.line-up span {
+	display: block;
+	margin-left: 30px;
+}

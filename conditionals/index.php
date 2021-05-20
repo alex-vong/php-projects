@@ -104,6 +104,8 @@
         Today is <span class='conditional'> <?= $day ?> </span> which means <span class='conditional'><?= $dayMeaning ?></span>!</p>
 
         <h2>My Shopping List</h2>
+        <h3>Array:</h3>
+        <p>shoppingList = ['eggs', 'milk', 'cheese', 'butter', 'chicken']</p>
 
         <?php
             $shoppingList = ['eggs', 'milk', 'cheese', 'butter', 'chicken'];
@@ -116,6 +118,32 @@
             <li>Item 3: <?=$shoppingList[3]?></li>
             <li>Item 4: <?=$shoppingList[4]?></li>
         </ol>
+
+
+        <h2 class="lakers"> 2009 Los Angeles Lakers</h2>
+        <h3>Object/Associative Array</h3>
+        <p class="line-up">lineUp = ["pg" => "Derek Fisher", "sg" => "Kobe Bryant", "sf" => "Trevor Ariza", "pf" => "Lamar Odom", "c" => "Pau Gasol"]
+        </p>
+
+        <?php
+            $lineUp = [
+                "pg" => "Derek Fisher",
+                "sg" => "Kobe Bryant",
+                "sf" => "Trevor Ariza",
+                "pf" => "Lamar Odom",
+                "c" => "Pau Gasol"
+            ];
+        ?>
+
+        <div>
+            <ul>
+                <li>Point Guard: <span class="starting5"><?=$lineUp['pg']?></span></li>
+                <li>Shooting Guard: <span class="starting5"><?=$lineUp['sg']?></span></li>
+                <li>Small Forward: <span class="starting5"><?=$lineUp['sf']?></span></li>
+                <li>Power Forward: <span class="starting5"><?=$lineUp['pf']?></span></li>
+                <li>Center: <span class="starting5"><?=$lineUp['c']?></span></li>
+            </ul>
+        </div>
 
 
     </section>
