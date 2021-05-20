@@ -150,30 +150,31 @@
 
 
     <?php
-    $pokedex = [
-        "01" => "Bulbasaur",
-        "02" => "Ivysaur",
-        "03" => "Venusaur",
-        "04" => "Charmander",
-        "05" => "Charmeleon",
-        "06" => "Charizard",
-        "07" => "Squirtle",
-        "08" => "Wortortle",
-        "09" => "Blastoise"
+    $pokemonArray = [
+        1 => "Bulbasaur",
+        2 => "Ivysaur",
+        3 => "Venusaur",
+        4 => "Charmander",
+        5 => "Charmeleon",
+        6 => "Charizard",
+        7 => "Squirtle",
+        8 => "Wortortle",
+        9 => "Blastoise"
     ];
 
-    echo $pokedex['Bulbasaur'];
 
-    foreach ($pokedex as $pokemon) {
+    foreach ($pokemonArray as $pokemon) {
         echo "<li>" . $pokemon . "</li>";
     }
     ?>
 
-    <?php foreach($pokedex as $pokemon) { ?>
-        <li><?=$pokemon?> </li>
-    <?php
-    }
-    ?>
+    <ol class='pokedex'>
+        <?php foreach($pokemonArray as $pokemon) { ?>
+            <li><?=$pokemon?></li>
+        <?php
+        }
+        ?>
+    </ol>
 
     <h2>Currency Convertor</h2>
     <p>Planning on taking a trip overseas? Well use this nifty currency conversion chart to help convert your USD to British Pounds, Chinese Yuan, Japanese Yen, and Euros!</p>
@@ -225,6 +226,10 @@
     <p class="salary">
         Annual Net Salary: <span class='income'>$<?php echo $english_format_number = number_format($salaryAfterTax)?></span>
     </p>
+
+
+
+
 
 
 
