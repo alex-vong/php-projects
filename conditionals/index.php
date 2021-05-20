@@ -146,7 +146,7 @@
         </div>
 
     <h2>Currency Convertor</h2>
-    <p>Takes the USD and convert it to Japanese Yen, British Pound, Chinese Yuan, and the Swiss Franc</p>
+    <p>Planning on taking a trip overseas? Well use this nifty currency conversion chart to help convert your USD to British Pounds, Chinese Yuan, Japanese Yen, and Euros!</p>
 
     <?php
         $usd = 100;
@@ -162,6 +162,39 @@
     <p><span class='currency'> &#165;<?=$usdToChineseYuan?></span> Chinese Yuan. Wahhhh!</p>
     <p>	<span class='currency'> &euro;<?=$usdToEuro?></span> Euros. Sacre Bleu!</p>
 
+    <h2>Athlete Income Calculator 2020</h2>
+    <p>Ever wonder how much Californian Athletes get taxed annual and what their net annual salary is? </p>
+
+    <?php
+        $salary = 37500000;
+        $fedIncomeTax = $salary * (37/100);
+        $stateTaxBill = 5000000;
+        $jockBill = 945000;
+
+        $salaryAfterTax = $salary - $fedIncomeTax - $stateTaxBill - $jockBill;
+
+
+    ?>
+
+    <p class="salary">
+        If a player makes <span class='income'>$<?php echo $english_format_number = number_format($salary)?></span> annually they will pay:
+    </p>
+
+    <p class="salary">
+        Federal Income Tax: <span class='tax'>$<?php echo $english_format_number = number_format($fedIncomeTax)?></span>
+    </p>
+
+    <p class="salary">
+        State Bill Tax: <span class='tax'>$<?php echo $english_format_number = number_format($stateTaxBill)?></span>
+    </p>
+
+    <p class="salary">
+        Jock Tax: <span class='tax'>$<?php echo $english_format_number = number_format($jockBill)?></span>
+    </p>
+
+    <p class="salary">
+        Annual Net Salary: <span class='income'>$<?php echo $english_format_number = number_format($salaryAfterTax)?></span>
+    </p>
 
 
 

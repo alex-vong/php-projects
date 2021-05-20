@@ -48,5 +48,13 @@ span.starting5 {
 }
 
 .currency {
-	color: hsl(98, 39%, 56%);
+	color: hsl(60, 56%, 28%);
+}
+
+.tax {
+	color: hsl(0, 100%, 50%);
+}
+
+.income {
+	color: hsl(120, 100%, 25%);
 }
