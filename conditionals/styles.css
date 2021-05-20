@@ -9,7 +9,7 @@ h2 {
 	font-size: 30px;
 	margin-top: 20px;
 	margin-bottom: 15px;
-	border-top: 1px solid #333;
+	border-top: 1px solid hsl(0, 0%, 20%);
 }
 
 p {
@@ -31,11 +31,11 @@ span.conditional {
 	font-weight: 900;
 	font-size: 20px;
 	font-style: italic;
-	color: limegreen;
+	color: hsl(120, 61%, 50%);
 }
 
 .lakers {
-	color: purple;
+	color: hsl(300, 100%, 25%);
 	text-shadow: 3px 3px 0px gold;
 }
 
@@ -44,9 +44,9 @@ span.conditional {
 }
 
 span.starting5 {
-	color: purple;
+	color: hsl(300, 67%, 20%);
 }
 
 .currency {
-	color: #85bb65;
+	color: hsl(98, 39%, 56%);
 }
