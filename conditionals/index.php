@@ -145,6 +145,36 @@
             </ul>
         </div>
 
+
+    <h2>Pokedex</h2>
+
+
+    <?php
+    $pokedex = [
+        "01" => "Bulbasaur",
+        "02" => "Ivysaur",
+        "03" => "Venusaur",
+        "04" => "Charmander",
+        "05" => "Charmeleon",
+        "06" => "Charizard",
+        "07" => "Squirtle",
+        "08" => "Wortortle",
+        "09" => "Blastoise"
+    ];
+
+    echo $pokedex['Bulbasaur'];
+
+    foreach ($pokedex as $pokemon) {
+        echo "<li>" . $pokemon . "</li>";
+    }
+    ?>
+
+    <?php foreach($pokedex as $pokemon) { ?>
+        <li><?=$pokemon?> </li>
+    <?php
+    }
+    ?>
+
     <h2>Currency Convertor</h2>
     <p>Planning on taking a trip overseas? Well use this nifty currency conversion chart to help convert your USD to British Pounds, Chinese Yuan, Japanese Yen, and Euros!</p>
 
