@@ -145,6 +145,25 @@
             </ul>
         </div>
 
+    <h2>Currency Convertor</h2>
+    <p>Takes the USD and convert it to Japanese Yen, British Pound, Chinese Yuan, and the Swiss Franc</p>
+
+    <?php
+        $usd = 100;
+        $usdToBritishPound = $usd * 0.71;
+        $usdToJapYen = $usd * 109;
+        $usdToChineseYuan = $usd * 6.44;
+        $usdToEuro = $usd * 1.22;
+    ?>
+
+    <p><span class='currency'> $<?=$usd?></span> is equal to:</p>
+    <p><span class='currency'> &#163;<?= $usdToBritishPound?></span> British Pounds. Bloody aye!</p>
+    <p><span class='currency'> &#165;<?=$usdToJapYen?></span> Japanese Yen. Sugoi!</p>
+    <p><span class='currency'> &#165;<?=$usdToChineseYuan?></span> Chinese Yuan. Wahhhh!</p>
+    <p>	<span class='currency'> &euro;<?=$usdToEuro?></span> Euros. Sacre Bleu!</p>
+
+
+
 
     </section>
 </body>

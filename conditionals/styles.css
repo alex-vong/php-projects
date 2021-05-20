@@ -12,6 +12,9 @@ h2 {
 	border-top: 1px solid #333;
 }
 
+p {
+	font-size: 20px;
+}
 p:nth-of-type(last) {
 	font-size: 80px;
 }
@@ -36,11 +39,14 @@ span.conditional {
 	text-shadow: 3px 3px 0px gold;
 }
 
+.starting5 {
+	font-size: 20px;
+}
+
 span.starting5 {
 	color: purple;
 }
 
-.line-up span {
-	display: block;
-	margin-left: 30px;
+.currency {
+	color: #85bb65;
 }
