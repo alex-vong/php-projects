@@ -13,7 +13,7 @@
 		/>
 		<meta
 			property="og:image"
-			content="monster-meta-png"
+			content="monster-meta.png"
 		/>
 		<meta property="og:title" content="Monster Adoption Agency" />
 		<link rel="shortcut icon" type="image/jpg" href="monster-fav.png" />
