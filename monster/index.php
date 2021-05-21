@@ -1,39 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta
-			name="description"
-			content="[[description]]"
-		/>
-		<meta
-			name="og:description"
-			content="[[description]]"
-		/>
-		<meta
-			property="og:image"
-			content="[[meta-image]]"
-		/>
-		<meta property="og:title" content="Monster Adoption Agency" />
-		<link rel="shortcut icon" type="image/jpg" href="[[favicon-image]]" />
-
-    <title>Monster Adoption Agency</title>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-			integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-			crossorigin="anonymous"
-		/>
-
-		<link rel="stylesheet" href="css/styles.css" />
-</head>
+<?php
+  include ('head.php');
+?>
 
 <body>
+  <?php
+    include ('nav-bar.php');
+  ?>
 
   <?php
-
-    echo "<h1> Monster Adoption </h1>";
 
       $codey = [
         "id" => 8,
@@ -58,7 +32,7 @@
         "name" => "Miss Reads-A-Lot",
         "favoriteFood" => "Alphabet Soup",
         "age" => 9,
-        "adopted" => false,
+        "adopted" => true,
          "portrait" => "https://peprojects.dev/alpha-1/alexvong/portraits/miss-reads-a-lot.jpg",
       ];
 
@@ -100,6 +74,7 @@
 
     $monsters = [$codey, $lima, $reads, $fragoo, $shadow, $bananas, $origina];
 
+    echo "<div class='inner-column'>";
     echo "<ol class='monsters'>";
 
      foreach ($monsters as $monster) {
@@ -112,23 +87,28 @@
         $story = "Hi, my name is " . $name . "! I am " . $age . " years old and my favorite food is " . $favoriteFood . "!";
 
         if ($adopted) {
+          $availability = "<span class='adopted'> Adopted!</span>";
           $status = " " . $name . " has found a loving home!";
         } else {
+          $availability = "<span class='available'> Available!</span>";
           $status = " " . $name . " is still looking for loving parents like you!";
         };
+
 
         echo "<li class='monster'>";
           echo
             "<monster-card id='" . $id . "'>" .
+                "<p class='status'>" . "Adoption Status: " . $availability . "</p>" .
                 "<img class='portrait' src='$portrait'>" .
                 "<h2 class='name'>" . $name . "</h2>" .
                 "<p class='story'>" . $story . "</p>" .
-                "<p class='status'>" . $status . "</p>" .
+                "<p>" . $status . "</p>" .
             "</monster-card>";
         echo "</li>";
      }
 
     echo "</ol>";
+    echo "</div>";
   ?>
 
 </body>

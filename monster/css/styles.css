@@ -2,19 +2,143 @@
 @import 'reset.css';
 
 body {
+	font-family: Aller, Helvetica, sans-serif;
+	background-color: hsl(0, 0%, 85%);
 }
 
 img {
-	width: 200px;
+	width: 300px;
+	height: auto;
+}
+
+.big-text {
+	font-size: clamp(30px, 8vw, 50px);
+	font-weight: 900;
+}
+
+.header {
+	margin-left: 25px;
+}
+
+/* nav bar */
+svg {
+	display: block;
+	max-width: 100px;
+	height: 100%;
+	border: 4px solid black;
+	border-radius: 50%;
+	padding: 5px;
+}
+
+.nav-bar {
+	padding: 10px;
+}
+
+.inner-column h1.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.nav-bar .inner-column {
+	display: flex;
+	justify-content: space-between;
+}
+
+.inner-column {
+	width: min(95%, 1200px);
+	margin: 0 auto;
 }
 
 .monsters {
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+li {
+	margin-top: 10px;
 }
 
 monster-card {
+	padding: 15px;
 	display: block;
-	border: 2px solid purple;
+}
+
+monster-card h2 {
+	font-size: 30px;
+	padding: 10px;
+}
+monster-card p {
+	margin: 10px 0;
+	font-size: 20px;
+	line-height: 1.5;
+}
+
+li:nth-child(1n) {
+	background-color: hsl(275, 100%, 41%);
+}
+li:nth-child(2n) {
+	background-color: hsl(230, 90%, 63%);
+}
+li:nth-child(3n) {
+	background-color: hsl(45, 100%, 53%);
+}
+li:nth-child(4n) {
+	background-color: hsl(0, 82%, 63%);
+}
+li:nth-child(5n) {
+	background-color: hsl(320, 47%, 52%);
+}
+li:nth-child(6n) {
+	background-color: hsl(52, 100%, 50%);
+}
+
+p.status {
+	text-transform: uppercase;
+	font-size: 30px;
+}
+
+.status span.adopted {
+	color: maroon;
+	text-shadow: 2px 2px 0 black;
+}
+.status span.available {
+	color: limegreen;
+	text-shadow: 2px 2px 0 black;
+}
+
+@media (min-width: 768px) {
+	.nav-bar .inner-column {
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	.monsters {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	li.monster {
+		width: calc(50% - 20px);
+		flex-grow: 1;
+		margin: 5px;
+	}
+}
+
+@media (min-width: 1000px) {
+	.monsters {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	li.monster {
+		width: min(33.33% - 20px);
+		flex-grow: 1;
+	}
 }
