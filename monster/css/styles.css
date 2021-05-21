@@ -1,0 +1,20 @@
+@import 'meyers-reset.css';
+@import 'reset.css';
+
+body {
+}
+
+img {
+	width: 200px;
+}
+
+.monsters {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+monster-card {
+	display: block;
+	border: 2px solid purple;
+}
