@@ -20,7 +20,7 @@
 
       $reads = [
         "id" => 9,
-        "name" => "Miss Sassy Bossy Pants",
+        "name" => "Miss Reads-A-Lots",
         "favoriteFood" => "Alphabet Soup",
         "age" => 9,
         "adopted" => true,
