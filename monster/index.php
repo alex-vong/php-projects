@@ -1,5 +1,8 @@
 
-<?php include('head.php');?>
+<?php include('head.php');
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);?>
 
 <body>
 
@@ -35,8 +38,8 @@
         echo "<li class='monster'>";
           echo
             "<monster-card id='" . $id . "'>" .
-                "<p class='status'>" . "Adoption Status: " . $availability . "</p>" .
-                "<img class='portrait' src='$portrait'>" .
+                "<p class='status'>" . "Status: " . $availability . "</p>" .
+                "<picture>" . "<img class='portrait' src='$portrait'>" . "</picture>" .
                 "<h2 class='name'>" . $name . "</h2>" .
                 "<p class='story'>" . $story . "</p>" .
                 "<p>" . $status . "</p>" .
