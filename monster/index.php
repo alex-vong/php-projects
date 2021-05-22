@@ -1,12 +1,23 @@
 
 <?php include('head.php');?>
-<?php include('monster-data.php');?>
 
 <body>
+
+<header class="nav-bar">
+  <div class="inner-column">
+    <picture>
+      <?php include('svg.php');?>
+    </picture>
+    <h1 class="header big-text">Monster Adoption Agency</h1>
+  </div>
+</header>
+
   <?php
 
-   include('nav-bar.php');
+   // include('nav-bar.php');
+   include('monster-data.php');
 
+      
     echo "<div class='inner-column'>";
     echo "<ol class='monsters'>";
 
@@ -40,10 +51,11 @@
         echo "</li>";
      }
 
-    echo "</ol>";
-    echo "</div>";
+     echo "</ol>";    
+     echo "</div>";
   ?>
 
 </body>
+
 
 </html>
