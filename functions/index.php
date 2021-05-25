@@ -22,26 +22,11 @@ function cafe(){
 
  -->
 <?php
+function sentence($param1, $param2) {
 
-
-$scope = "global";
-
-
-function local1(){
-	$scope = "only local to local1";
-	echo $scope;
+	echo "The " . $param1 . " is " .$param2 ."!";
 }
 
-function local2(){
-	$scope = "only local to local2";
-	echo $scope;
-}
-
-echo $scope;
-
-local1();
-
-local2();
-
+sentence("cat", "black");
 
 ?>
