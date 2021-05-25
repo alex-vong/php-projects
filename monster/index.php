@@ -10,8 +10,6 @@
    include('monster-data.php');
 
   ?>
-  
-
       
   <div class='inner-column'>
   <ol class='monsters'>
