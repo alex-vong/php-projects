@@ -8,13 +8,17 @@
 
    include('nav-bar.php');
    include('monster-data.php');
+
+   ?>
   
 
       
-    echo "<div class='inner-column'>";
-    echo "<ol class='monsters'>";
+   <div class='inner-column'>
+   <ol class='monsters'>
 
-     foreach ($monsters as $monster) {
+  <?php foreach ($monsters as $monster) { ?>
+
+      <?php
         $id = $monster["id"];
         $name = $monster["name"];
         $favoriteFood = $monster["favoriteFood"];
@@ -31,22 +35,25 @@
           $status = " " . $name . " is still looking for loving parents like you!";
         };
 
+    ?>
     
-        echo "<li class='monster'>";
-          echo
-            "<monster-card id='" . $id . "'>" .
-                "<p class='status'>" . "Status: " . $availability . "</p>" .
-                "<picture>" . "<img class='portrait' src='$portrait'>" . "</picture>" .
-                "<h2 class='name'>" . $name . "</h2>" .
-                "<p class='story'>" . $story . "</p>" .
-                "<p>" . $status . "</p>" .
-            "</monster-card>";
-        echo "</li>";
-     }
+        <li class='monster'>
+            <monster-card id="<?=$id?>"> 
+                <p class='status'> Status" <?=$availability?> </p> 
+                <picture> 
+                  <img class='portrait' src="<?=$portrait?>"> 
+                </picture> 
+                <h2 class='name'> "<?=$name?>" </h2> 
+                <p class='story'> "<?=$story?>" </p> 
+                <p> "<?=$status?>" </p> 
+            </monster-card>
+        </li>
+    
+     <?php } ?>
 
-     echo "</ol>";    
-     echo "</div>";
-  ?>
+    </ol>   
+   </div>
+
 
 </body>
 
