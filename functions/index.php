@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 
 $donut = 7;
 
@@ -16,5 +16,32 @@ function cafe(){
 
 	echo $bagel;
 	echo $donut;
+
+?>
+
+
+ -->
+<?php
+
+
+$scope = "global";
+
+
+function local1(){
+	$scope = "only local to local1";
+	echo $scope;
+}
+
+function local2(){
+	$scope = "only local to local2";
+	echo $scope;
+}
+
+echo $scope;
+
+local1();
+
+local2();
+
 
 ?>
