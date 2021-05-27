@@ -17,7 +17,7 @@
 	<label for="last-name">Last Name:</label>
 	<input type="text" name="last-name" id="last-name" placeholder="Last Name">
 	<input type="email" placeholder="email">
-	<br>
+	
 	<input type="password" placeholder="password">
 
 
