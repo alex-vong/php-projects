@@ -15,8 +15,8 @@
   <ol class='monsters'>
 
   <?php foreach ($monsters as $monster) { ?>
-
-    <?php
+   
+   <?php
       $id = $monster["id"];
       $name = $monster["name"];
       $favoriteFood = $monster["favoriteFood"];
@@ -33,8 +33,8 @@
         $status = " " . $name . " is still looking for loving parents like you!";
       };
 
-    ?>
-    
+      ?>
+ 
     <li class='monster'>
       <monster-card id="<?=$id?>"> 
           <p class='status'> Status: <?=$availability?> </p> 
