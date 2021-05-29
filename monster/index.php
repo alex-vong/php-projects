@@ -14,7 +14,7 @@
   <div class='inner-column'>
   <ol class='monsters'>
 
-  <?php foreach ($monsters as $monster) { ?>
+  <?php foreach($monsters as $monster) { ?>
    
    <?php
       $id = $monster["id"];
