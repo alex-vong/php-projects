@@ -33,9 +33,11 @@
         $status = " " . $name . " is still looking for loving parents like you!";
       };
 
+
+
       ?>
  
-    <li class='monster'>
+<li class='monster'>
       <monster-card id="<?=$id?>"> 
           <p class='status'> Status: <?=$availability?> </p> 
           <picture> 
@@ -46,7 +48,7 @@
           <p> <?=$status?> </p> 
       </monster-card>
     </li>
-    
+   
   <?php } ?>
 
   </ol>   
