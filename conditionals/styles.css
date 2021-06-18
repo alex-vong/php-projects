@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+* {
+	box-sizing: border-box;
+
+}
+
 h1 {
 	font-size: 60px;
 	margin: 20px 0;
@@ -12,6 +17,10 @@ h2 {
 	border-top: 1px solid hsl(0, 0%, 20%);
 }
 
+h3 {
+	font-size: 24px;
+}
+
 p {
 	font-size: 20px;
 }
@@ -21,6 +30,7 @@ p:nth-of-type(last) {
 
 .inner-column {
 	width: min(90%, 1000px);
+	/*margin:  auto;*/
 }
 body {
 	font-family: 'Roboto Mono', monospace;
@@ -57,4 +67,60 @@ span.starting5 {
 
 .income {
 	color: hsl(120, 100%, 25%);
+}
+
+
+picture {
+	display: block;
+	padding:  10px;
+
+}
+
+picture img {
+	display: block;
+	height: 200px;
+	width: 200px;
+	border:  2px solid black;
+	padding:  10px;
+	background-color: #fff;
+}
+
+.card-wrapper {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content:  center;
+
+}
+
+.poke-card {
+	border:  2px solid black;
+	text-align: center;
+	margin:  10px 5px;
+}
+
+.poke-card:first-child {
+	background-color: green;
+}
+
+.poke-card:nth-child(2n) {
+	background-color: orange;
+}
+
+.poke-card:nth-child(3n) {
+	background-color: goldenrod;
+}
+
+.poke-card:nth-child(4n) {
+	background-color: dodgerblue;
+}
+
+.poke-card:nth-child(5n) {
+	background-color: maroon;
+}
+
+.poke-card:nth-child(6n) {
+	background-color: purple;
 }
