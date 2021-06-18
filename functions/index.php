@@ -1,19 +1,24 @@
 
 <style type="text/css">
-
+	* {
+		box-sizing: border-box;
+		margin:  0;
+		padding:  0;
+	}
 	body {
 		font-family: aller;
+		padding:  15px;
 	}
 
-	h1 {
+	/*h1 {
 		color: green;
-	}
+	}*/
 
 	
 	span {
 		font-weight: 900;
-		text-transform: uppercase;
-		color: green;
+		/*text-transform: uppercase;*/
+		/*color: green;*/
 	}
 
 	li {
@@ -30,17 +35,54 @@
 		margin-bottom: 5px;
 	}
 
-	li span {
+/*	li span {
 		color: dodgerblue;
 	}
-
-
+*/
+/*
  	h2 {
 		color: purple;
+	}*/
+
+	.laker-wrapper {
+		color:  #fff;
+		display: flex;
+		flex-wrap: wrap;
+		/*width:  min(80%, 1200px);*/
 	}
+
+	.laker-card {
+		padding:  15px;
+		margin:  5px;
+		border:  2px solid black;
+		flex:  1;
+		border-radius:  10px;
+
+
+	}
+
+	.laker-card:nth-child(odd) {
+		background-color: #552583;
+		text-shadow:  2.5px 2.5px 0 black;
+	}
+
+	.laker-card:nth-child(even) {
+		background-color: #FDB927;
+		text-shadow:  1.5px 1.5px 0 black;
+	}
+
+	.laker-card:nth-child(odd) span {
+		color: #FDB927
+	}
+
+	.laker-card:nth-child(even) span {
+		color: #552583;
+		text-shadow:  1px 1px 0 black;
+	}
+
 </style>
 
-
+<!-- 
 <h1>MadLib Generator</h1>
 
 <?php
@@ -124,6 +166,69 @@ madlib("Costco Pizza", "Alligator", "Dead", "Drano");
 	</ul>
 
 <?php } ?>
+ -->
+
+<?php
+
+	function lakers($start, $end, $wins, $losses, $sg, $pg, $sf, $pf, $center, $coach) {
+		$starting5 =[
+			'start' => $start,
+			'end' => $end,
+			'wins' => $wins,
+			'losses' => $losses,
+			'sg' => $sg,
+			'pg' => $pg,
+			'sf' => $sf,
+			'pf' => $pf,
+			'center' => $center,
+			'coach' => $coach
+		];
+
+		return $starting5;
+	}
+
+	$lakers01 = lakers(2000, 2001, 56, 26, 'Derek Fisher', 'Kobe Bryant', 'Rick Fox', 'Horace Grant', 'Shaquille O\'Neal', 'Phil Jackson');
+	$lakers09 = lakers(2008, 2009, 65, 17, 'Derek Fisher', 'Kobe Bryant', 'Travor Ariza', 'Lamar Odom', 'Pau Gasol', 'Phil Jackson');
+	$lakers88 = lakers(1987, 1988, 62, 20, 'Magic Johnson', 'Byron Scott', 'A.C. Green', 'James Worthy', 'Kareem Abdul-Jabar', 'Pat Riley');
+	$lakers20 = lakers(2019, 2020, 42, 30, 'LeBron James', 'Kentavious Caldwell-Pope', 'Danny Green', 'Anthony Davis', 'Dwight Howard', 'Frank Vogel');
+	
+	$lakersStarting5 =[$lakers88, $lakers01, $lakers09, $lakers20];
+
+?>
+
+<h2 class='lakers-header'>Lakers Championship Starting 5</h2>
+<section class="laker-wrapper">
+	<?php foreach ($lakersStarting5 as $lakers) { ?> 	
+	 	<div class="laker-card">
+			<ul>
+				<li>
+					<span>Season:</span> <?=$lakers['start']?> to <?=$lakers['end']?>
+				</li>
+					<li>
+					<span>Overall Record:</span> <?=$lakers['wins']?>-<?=$lakers['losses']?> (W-L)
+				</li>
+				<li>
+					<span>Point Guard:</span> <?=$lakers['pg']?>
+				</li>
+				<li>
+					<span>Shooting Guard:</span> <?=$lakers['sg']?>
+				</li>
+				<li>
+					<span>Small Forward:</span> <?=$lakers['sf']?>
+				</li>
+				<li>
+					<span>Power Forward:</span> <?=$lakers['pf']?>
+				</li>
+				<li>
+					<span>Center:</span> <?=$lakers['center']?>
+				</li>
+				<li>
+					<span>Head Coach:</span> <?=$lakers['coach']?>
+				</li>
+			</ul>
+	   </div>
+	<?php } ?>
+</section>
 
 
 
