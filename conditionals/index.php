@@ -14,7 +14,7 @@
 
 <body>
     <section class="inner-column">
-
+<!-- 
     <?php
 
         echo "<h1>PHPractice</h1>";
@@ -226,14 +226,146 @@
     <p class="salary">
         Annual Net Salary: <span class='income'>$<?php echo $english_format_number = number_format($salaryAfterTax)?></span>
     </p>
+ -->
+<!-- 
+<h2>Shopping List</h2>
+
+<?php $toBuy = ['eggs', 'milk', 'coffee', 'bread', 'weed']; ?>
+
+<ul> Need to Buy:
+   <li><?=$toBuy[0]?></li> 
+   <li><?=$toBuy[3]?></li>
+   <li><?=$toBuy[1]?></li> 
+   <li><?=$toBuy[2]?></li> 
+   <li><?=$toBuy[4]?></li> 
+</ul>  -->
+
+
+<!-- <h2>Day of the Week</h2>
+
+<?php
+ $day = 'Tuesday';
+
+     if ($day === 'Monday') {
+         echo 'Today is ' . $day . '. Only 5 more days until the weekend!';
+     } else if ($day === 'Tuesday') {
+         echo 'Today is ' . $day . ', time for some Tacos!.';
+     } else if ($day === 'Wednesday') {
+         echo 'Today is ' . $day . '. Hump Day!';
+     } else if ($day === 'Thursday') {
+         echo 'Today is ' . $day . '. Just one more day!!';
+     } else if ($day === 'Friday') {
+         echo 'It is finally ' . $day . '! Time to party!';
+     } else if ($day === 'Saturday') {
+         echo 'Today is ' . $day . '. What a glorious day!';
+     } else if ($day === 'Sunday') {
+         echo 'Sundays are meant for relaxing';
+     } else {
+         echo 'Hmmm ' . $day . ' does not seem to be a day of the week.';
+     }
+?>  -->
+
+
+<!-- <h2>Can I get a drink?</h2>
+
+<?php
+  $age = 109;
+  $drinkingAge = 21;
+  $ageDifference = $age - $drinkingAge;
+
+  if ($age >= $drinkingAge) {
+      echo 'You are ' . $age . ' which is ' . $ageDifference . ' years over the ' . $drinkingAge . ' year old age limit. Here is a beer!';
+  } else {
+      echo 'You are ' . $age . ' which is ' . $ageDifference . ' years under the ' . $drinkingAge . ' year old age limit. Here is some apple juice!';
+  }
+
+?> 
+ -->
+
+
+<h2>Dinner Plans</h2>
+
+<?php 
+  $hunger = true;
+  $moneyInBank = false;
+
+  if (!$hunger) {
+      echo "You are not even hungry!";
+  } else if ($hunger && $moneyInBank === false) {
+      echo 'You are broke. Make a sandwhich at home';
+  } else if ($hunger && $moneyInBank) {
+      echo 'You are hungry and have money in the bank so go treat yoself to a nice dinner!';
+  } else if ($moneyInBank || $hunger === false) {
+      echo 'You do not seem to be hungry but hey you have money in the bank so go buy food anyways, I guess.';
+  } else {
+      echo 'I do not know what to tell yah, bud.';
+  }
+?> 
+ 
 
 
 
 
 
+<!-- <section class="pokedex">
+   <div class="inner-column">
+      <h2>Alex's Top 6</h2>
+      <div class="card-wrapper">
+          <?php
+              $pokeList = [
+               [
+                  "id" => 3,
+                  "name" => 'Venusaur',
+                  "type" => 'Ghost/Poison',
+                  "image" => 'https://img.pokemondb.net/artwork/large/venusaur.jpg'
+               ],
+               [
+                  "id" => 149,
+                  "name" => 'Dragonite',
+                  "type" => 'Dragon/Flying',
+                  "image" => 'https://img.pokemondb.net/artwork/large/dragonite.jpg'
+               ],                  
+               [
+                  "id" => 125,
+                  "name" => 'Electabuzz',
+                  "type" => 'Electric',
+                  "image" => 'https://img.pokemondb.net/artwork/large/electabuzz.jpg'
+               ],
+               [
+                  "id" => 130,
+                  "name" => 'Gyarados',
+                  "type" => 'Water/Flying',
+                  "image" => 'https://img.pokemondb.net/artwork/large/gyarados.jpg'
+               ],
+               [
+                  "id" => 59,
+                  "name" => 'Arcanine',
+                  "type" => 'Fire',
+                  "image" => 'https://img.pokemondb.net/artwork/large/arcanine.jpg'
+               ],
+               [
+                  "id" => 94,
+                  "name" => 'Gengar',
+                  "type" => 'Ghost/Poison',
+                  "image" => 'https://img.pokemondb.net/artwork/large/gengar.jpg'
+               ]                
+              ];
+            ?>
+            <?php foreach ($pokeList as $pokemon) { ?>
+              <div id='<?=$pokemon["id"]?>' class=poke-card>
+                  <picture>
+                     <img src="<?=$pokemon['image']?>" alt="">
+                  </picture>
+                  <h3><?=$pokemon['name']?></h3>
+                  <p><?=$pokemon['type']?></p>
+              </div>
+            <?php } ?>
+      </div>
+   </div>
+</section> -->
 
 
-    </section>
+
 </body>
 
 </html>
