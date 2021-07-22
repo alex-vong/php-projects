@@ -72,7 +72,16 @@
          "portrait" => "https://peprojects.dev/alpha-1/alexvong/portraits/shadow.jpg",
       ];
 
-    $monsters = [$codey, $lima, $reads, $fragoo, $shadow, $bananas, $origina, $jorge];
+        $mikey = [
+        "id" => 2319,
+        "name" => "Jorge Sanderson",
+        "favoriteFood" => "Watermelons",
+        "age" => 500,
+        "adopted" => false,
+         "portrait" => "https://peprojects.dev/alpha-1/alexvong/portraits/shadow.jpg",
+      ];
+
+    $monsters = [$codey, $lima, $reads, $fragoo, $shadow, $bananas, $origina, $jorge, $mikey];
 
 
 
