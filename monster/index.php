@@ -38,16 +38,16 @@
       ?>
  
 <li class='monster'>
-      <monster-card id="<?=$id?>"> 
-          <p class='status'> Status: <?=$availability?> </p> 
-          <picture> 
-            <img class='portrait' src="<?=$portrait?>"> 
-          </picture> 
-          <h2 class='name'> <?=$name?> </h2> 
-          <p class='story'> <?=$story?> </p> 
-          <p> <?=$status?> </p> 
-      </monster-card>
-    </li>
+  <monster-card id="<?=$id?>"> 
+      <p class='status'> Status: <?=$availability?> </p> 
+      <picture> 
+        <img class='portrait' src="<?=$portrait?>"> 
+      </picture> 
+      <h2 class='name'> <?=$name?> </h2> 
+      <p class='story'> <?=$story?> </p> 
+      <p> <?=$status?> </p> 
+  </monster-card>
+</li>
    
   <?php } ?>
 
