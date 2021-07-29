@@ -1,0 +1,1 @@
+<h1>Kanto Region</h1>
